@@ -1,0 +1,11 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#D3D3D3" id="canvas_background" height="130" width="130" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>box</title>
+  <rect id="svg_1" height="112" width="112" y="8" x="8" stroke-width="0" stroke="#000" fill="#ffff00"/>
+ </g>
+</svg>

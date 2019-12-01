@@ -1,0 +1,48 @@
+#win-status {
+    color: red;
+}
+
+#board {
+    table-layout: fixed;
+    width: 100%;
+    max-width: 600px;
+}
+
+#board > tr::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.wall {
+    background: black;
+}
+
+.floor {
+    background: lightgrey;
+}
+
+.goal {
+    background-image: url("../assets/goal.svg");
+    background-size: 100%;
+}
+
+.player {
+    background-image: url("../assets/player.svg");
+    background-size: 100%;
+}
+
+.box {
+    background-image: url("../assets/box.svg");
+    background-size: 100%;
+}
+
+.box.goal {
+    background-image: url("../assets/box-goal.svg");
+    background-size: 100%;
+}
+
+.player.goal {
+    background-image: url("../assets/player-goal.svg");
+    background-size: 100%;
+}
