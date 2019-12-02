@@ -21,10 +21,13 @@ export default class Game extends Component {
         window.addEventListener('keydown', this.handleKeyDown);
     }
 
-    componentWillReceiveProps(nextProps) {
-        const {level} = nextProps.match.params;
+    static getDerivedStateFromProps(props, state) {
+        const {level} = props.match.params;
+        if (level === state.level) {
+            return null;
+        }
         const game = boardConverter(OldBoards[level]);
-        this.setState({level, game});
+        return {level, game};
     }
 
     restartGame = () => {
