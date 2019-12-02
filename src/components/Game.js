@@ -21,6 +21,8 @@ export default class Game extends Component {
         window.addEventListener('keydown', this.handleKeyDown);
     }
 
+    // When the next level is loaded, the component remains with different level value.
+    // The game should be recreated in this case.
     static getDerivedStateFromProps(props, state) {
         const {level} = props.match.params;
         if (level === state.level) {

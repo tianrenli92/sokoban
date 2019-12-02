@@ -16,7 +16,7 @@ export default class Sokoban {
     /**
      * @param {number} height
      * @param {number} width
-     * @param {SquareType[][]} board a 2-d array of squares
+     * @param {SquareType[][]} board a 2-d array of types of each square
      * @param {boolean[][]} boxBoard a 2-d array of boolean indicating if there is a box in each square
      * @param {number[]} player the player's position represented with two numbers
      */
