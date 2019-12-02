@@ -33,7 +33,6 @@ export default class Sokoban {
             for (const [j, square] of row.entries()) {
                 if (square === SquareType.GOAL && !boxBoard[i][j]) {
                     goalLeft++;
-                    break;
                 }
             }
         }
