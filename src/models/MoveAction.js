@@ -1,6 +1,7 @@
 /**
  * @typedef {number} MoveAction
  * @typedef {number[]} MoveDiff
+ * @typedef {number} KeyMap
  **/
 
 /**
@@ -23,4 +24,15 @@ export const MoveDiff = {
     [MoveAction.MOVE_RIGHT]: [0, 1],
     [MoveAction.MOVE_DOWN]: [1, 0],
     [MoveAction.MOVE_LEFT]: [0, -1],
+};
+
+/**
+ * Represents the mapping between pressed keys and move actions.
+ * @enum {KeyMap}
+ */
+export const KeyMap = {
+    38: MoveAction.MOVE_UP,
+    39: MoveAction.MOVE_RIGHT,
+    40: MoveAction.MOVE_DOWN,
+    37: MoveAction.MOVE_LEFT,
 };

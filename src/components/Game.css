@@ -1,3 +1,7 @@
+.m-1 {
+    margin: 0.25rem;
+}
+
 #win-status {
     color: red;
 }
@@ -8,7 +12,7 @@
     max-width: 600px;
 }
 
-#board > tr::after {
+#board > tbody > tr::after {
     content: "";
     display: block;
     padding-bottom: 100%;
@@ -45,4 +49,28 @@
 .player.goal {
     background-image: url("../assets/player-goal.svg");
     background-size: 100%;
+}
+
+#controller {
+    table-layout: fixed;
+    width: 100%;
+    max-width: 600px;
+}
+
+#controller > tbody > tr::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.controller-button {
+    font-size: 10vw;
+    text-align: center;
+    background: lightskyblue;
+}
+
+@media only screen and (min-width: 768px) {
+    #controller {
+        display: none;
+    }
 }
